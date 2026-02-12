@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video Presentation - Professional video showcase with custom playback controls">
+    <title>Video Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">🎬 Video Presentation</h1>
+            <p class="subtitle">Experience premium video playback with custom speed controls</p>
+        </header>
+
+        <!-- Video Section 1 - Design -->
+        <section class="video-section">
+            <div class="video-card">
+                <h2 class="video-heading">
+                    <span class="heading-icon">🎨</span>
+                    Design Process
+                </h2>
+                <div class="video-wrapper">
+                    <video id="video1" class="video-player" controls>
+                        <source src="design.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="controls-panel">
+                    <div class="control-group">
+                        <label class="control-label">Playback Speed:</label>
+                        <div class="speed-buttons">
+                            <button class="speed-btn" data-video="video1" data-speed="0.5">0.5x</button>
+                            <button class="speed-btn" data-video="video1" data-speed="0.75">0.75x</button>
+                            <button class="speed-btn active" data-video="video1" data-speed="1">1x</button>
+                            <button class="speed-btn" data-video="video1" data-speed="1.25">1.25x</button>
+                            <button class="speed-btn" data-video="video1" data-speed="1.5">1.5x</button>
+                            <button class="speed-btn" data-video="video1" data-speed="2">2x</button>
+                        </div>
+                    </div>
+                    <div class="current-speed">
+                        Current Speed: <span id="speed-display-1">1.0x</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section 2 - Frontend to Deployment -->
+        <section class="video-section">
+            <div class="video-card">
+                <h2 class="video-heading">
+                    <span class="heading-icon">🚀</span>
+                    Frontend to Deployment
+                </h2>
+                <div class="video-wrapper">
+                    <video id="video2" class="video-player" controls>
+                        <source src="frontend-to-deployment.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="controls-panel">
+                    <div class="control-group">
+                        <label class="control-label">Playback Speed:</label>
+                        <div class="speed-buttons">
+                            <button class="speed-btn" data-video="video2" data-speed="0.5">0.5x</button>
+                            <button class="speed-btn" data-video="video2" data-speed="0.75">0.75x</button>
+                            <button class="speed-btn active" data-video="video2" data-speed="1">1x</button>
+                            <button class="speed-btn" data-video="video2" data-speed="1.25">1.25x</button>
+                            <button class="speed-btn" data-video="video2" data-speed="1.5">1.5x</button>
+                            <button class="speed-btn" data-video="video2" data-speed="2">2x</button>
+                        </div>
+                    </div>
+                    <div class="current-speed">
+                        Current Speed: <span id="speed-display-2">1.0x</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Video Presentation. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
