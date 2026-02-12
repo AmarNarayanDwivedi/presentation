@@ -147,18 +147,25 @@ body {
 .video-wrapper {
     position: relative;
     width: 100%;
+    max-height: 60vh;
     border-radius: var(--radius-md);
     overflow: hidden;
     margin-bottom: var(--spacing-md);
     box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
 }
 
 .video-player {
     width: 100%;
+    max-height: 60vh;
     height: auto;
     display: block;
     border-radius: var(--radius-md);
     background: #000;
+    object-fit: contain;
 }
 
 /* Controls Panel */
